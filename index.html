@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark-reasonable.min.css">
 
     <title>CV Kirill Lipnitskiy</title>
 </head>
@@ -86,7 +87,20 @@
         </figure>
         <article class="code_ex">
             <h2 id="Code" class="tittle">Code Example</h2>
-            <img class="example" src="./images/cod_ex.JPG" alt="Example">
+            <pre>
+                <code class="js">
+                    let ask = (question, yes, no ) => {
+                        if (confirm(question)) yes()
+                        else no();
+                    };
+                    
+                    ask(
+                        "Вы согласны?",
+                        () => { alert("Вы согласились."); },
+                        () => { alert("Вы отменили выполнение."); }
+                    );
+                </code>
+            </pre>
         </article>
         <footer class="footer">
             <div class="copyright">
@@ -101,5 +115,9 @@
             </div>
         </footer>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
 </body>
 </html>
+
