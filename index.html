@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark-reasonable.min.css">
+
+    <title>CV Kirill Lipnitskiy</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                        <li><a class="menu__item" href="#Introduction">Introduction</a></li>
+                        <li><a class="menu__item" href="#SKILLS">SKILLS</a></li>
+                        <li><a class="menu__item" href="#Education">Education</a></li>
+                        <li><a class="menu__item" href="#My">My project</a></li>
+                        <li><a class="menu__item" href="#How">How to contact me</a></li>
+                        <li><a class="menu__item" href="#Code">Code Example</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header class="CV">
+            <div class="name">
+                <div class="image">
+                    <img class="radius" src="./images/kirill.IsWa4.jpg" alt="Kirill Lipnitskiy">
+                </div>
+            </div>
+            <div class="myname">
+                <h1 class="tittle">Kirill Lipnitskiy</h1>
+            </div>
+        </header>
+        <section class="content">
+            <h2 id="Introduction" class="tittle">Introduction</h2>
+            <h3 class="infoIntroduction">
+                I am a beginner web developer. In the future, I want to become a  front-end developer. My strengths are purposefulness, responsibility, pedantry, learning ability and sociability.
+            </h3>
+        </section>
+        <aside class="info_Experience">
+            <h2 id="SKILLS" class="tittle">SKILLS</h2>
+            <ul class="infoIntroduction">
+                <li>Figma</li>
+                <li>Git</li>
+                <li>VS code</li>
+                <li>Intellij idea</li>
+                <li>English (A1)</li>
+            </ul>
+        </aside>
+        <aside class="info_Education">
+            <h4 id="Education" class="tittle">Education</h4>
+            <p class="infoIntroduction">I am a student of the Vitebsk State Technological University with a degree in "Computer Mechatronics"</p>
+        </aside>
+        <aside class="info_How">
+            <h5 id="How" class="tittle">How to contact me</h5>
+            <ul class="infoIntroduction">
+                <li>
+                    <a href="tel:+375445110108" >+375445110108</a>
+                </li>
+                <li>
+                    <a href="https://vk.com/kriskip123">VK</a>
+                </li>
+                <li>
+                    <a href="https://github.com/KrisKip123">Git</a>
+                </li>
+                <li>
+                    <p class="med">kriskip12393@gmail.com</p>
+                </li>
+            </ul>
+        </aside>
+        <figure class="code_ex">
+            <h6 class="tittle" id="My">My project</h6>
+            <a href="https://rolling-scopes-school.github.io/kriskip123-JSFEPRESCHOOL/museum/" target="_blank"><img class="mus" src="./images/mus.JPG" alt="no img"></a>
+            <p class="tittle">Description</p>
+            <span class="infoIntroduction">
+                Make up the landing page of the Louvre – one of the largest and most popular art museums in the world.
+            </span>
+            <p class="infoIntroduction">Technologies: CSS and HTML</p>
+        </figure>
+        <article class="code_ex">
+            <h2 id="Code" class="tittle">Code Example</h2>
+            <pre>
+                <code class="js">
+                    let ask = (question, yes, no ) => {
+                        if (confirm(question)) yes()
+                        else no();
+                    };
+                    
+                    ask(
+                        "Вы согласны?",
+                        () => { alert("Вы согласились."); },
+                        () => { alert("Вы отменили выполнение."); }
+                    );
+                </code>
+            </pre>
+        </article>
+        <footer class="footer">
+            <div class="copyright">
+                <img src="./images/znachok-s-v-kruzhochke.png" alt="copyright">
+                <p class="copyright_year">2021</p>
+                <a class="tittle" href="https://github.com/KrisKip123">Git</a>
+            </div>
+            <div class="footer_foo">
+                <a href="https://rs.school/js/">
+                <img class="rs_school" src="./images/rs_school_js.svg" alt="RS School JS">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
